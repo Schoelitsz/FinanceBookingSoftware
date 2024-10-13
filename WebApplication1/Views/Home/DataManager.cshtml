@@ -1,0 +1,82 @@
+﻿@*
+    
+*@
+@{
+    ViewData["Title"] = "Data Manager";
+}
+
+<div>
+    <h1>Add or Manager data lines</h1>
+    <form>
+        <label>Pick a quarter</label>
+        <select>
+            <option>Q1</option>
+            <option>Q2</option>
+            <option>Q3</option>
+            <option>Q4</option>
+        </select>
+        <label>Pick a year</label>
+        <select>
+            <option>2024</option>
+            <option>2025</option>
+        </select>
+        <label>linetype</label>
+        <select>
+            <option>income</option>
+            <option>expense</option>
+            <option>accounts receivable</option>
+        </select>
+        <label>credited account</label>
+        <select>
+            <option>account 1</option>
+            <option>account 2</option>
+        </select>
+        <label>debited account</label>
+        <select>
+            <option>account 1</option>
+            <option>account 2</option>
+        </select>
+        <label>Amount</label>
+        <input type="number" />
+        <label>currency</label>
+        <select>
+            <option>euro</option>
+            <option>dollar</option>
+        </select>
+        <label>Country transaction</label>
+        <select>
+            <option>Netherlands</option>
+        </select>
+        <label>native currency</label>
+        <select> 
+            <option>Euro</option>
+        </select>
+        <label>native amount</label>
+        <input value="converted amount" />
+        <button type="submit" >Submit</button>
+    </form>
+    <label>info for</label>
+    <select>
+        <option>Q1 2025</option>
+    </select>
+    <table>
+        <tr>
+            <th>transaction title</th>
+            <th>transaction type</th>
+            <th>account credited</th>
+            <th>account debited</th>
+            <th>amount</th>
+            <th>currency</th>
+            <th>select</th>
+        </tr>
+        <tr>
+            <td>variable</td>
+            <td>variable</td>
+            <td>variable</td>
+            <td>variable</td>
+            <td>variable</td>
+            <td>variable</td>
+            <input type="checkbox" />
+        </tr>
+    </table>
+</div>
